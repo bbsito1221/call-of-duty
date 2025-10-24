@@ -21,8 +21,9 @@ html{
 }
 
 :root{
-    --negro: #292524;
-    --gris: #27272a;
+    --negro: #171717;
+    --gris: #262626;
+    --grisclaro: #27272a;
     --titulo: #d4d4d4;
     --letra: #a3a3a3;
     --naranjo: #ea580c;
@@ -31,7 +32,7 @@ html{
 
 }
 body{
-    background-color: var(--negro);
+    background-color: var(--gris);
 }
 h1, h2, h3, p, li, a{
     font-family: "Open Sans", sans-serif;
@@ -56,6 +57,7 @@ header{
 .hamburguesa{
     z-index: 5;
     position: relative;
+    cursor: pointer;
 }
 .menu{
     margin-top: 4.8rem;
@@ -66,7 +68,7 @@ header{
     justify-content: center;
     align-items: center;
     z-index: 2;
-    background-color: var(--gris);
+    background-color: var(--grisclaro);
     opacity: .9;
     list-style: none;
 }
@@ -82,13 +84,13 @@ header{
 
 }
 .menu li:hover{
-    background-color: var(--naranjoOscurox2);
+    background-color: var(--naranjo);
 }
 .menu a{
     text-decoration: none;
 
     font-weight: 900;
-    color: var(--naranjoOscuro);
+    color: var(--titulo);
     font-size: 1.5rem;
     transition: .3s;
 }
@@ -121,8 +123,9 @@ main .hero .img{
     
 }
 main .section .article{
-    background-color: var(--gris);
-    padding: 1rem;
+    background-color: var(--grisclaro);
+    padding-bottom: 2rem;
+
 
 }
 main .section .article h2{
@@ -130,11 +133,18 @@ main .section .article h2{
     text-align: center;
     color: var(--titulo);
 }
+
 main .section .article .divTexto p{
     color: var(--letra);
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 .spanNaranjo{
     color: var(--naranjo);
+}
+footer{
+    text-align: center;
+    padding: 1rem;
+    color: var(--titulo);
+    font-weight: 900
 }
 
