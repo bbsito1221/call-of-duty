@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5;
+}
+
+:root{
+    --negro: #292524;
+    --gris: #27272a;
+    --titulo: #d4d4d4;
+    --letra: #a3a3a3;
+    --naranjo: #ea580c;
+    --naranjoOscuro: #c2410c;
+    --naranjoOscurox2: #9a3412;
+
+}
+body{
+    background-color: var(--negro);
+}
+h1, h2, h3, p, li, a{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menuToggle{
+    display: none;
+}
+#iconMenu{
+    color: var(--naranjo);
+}
+.hamburguesa{
+    z-index: 5;
+    position: relative;
+}
+.menu{
+    margin-top: 4.8rem;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: var(--gris);
+    opacity: .9;
+    list-style: none;
+}
+.menu a:hover{
+    color: var(--negro);
+}
+.menu li{
+    width: 100%;
+    transition: 1s;
+    text-align: center;
+    padding: 1rem;
+
+
+}
+.menu li:hover{
+    background-color: var(--naranjoOscurox2);
+}
+.menu a{
+    text-decoration: none;
+
+    font-weight: 900;
+    color: var(--naranjoOscuro);
+    font-size: 1.5rem;
+    transition: .3s;
+}
+#menuToggle:checked ~ .menu{
+    display: flex;
+}
+.barraNavecgacion{
+    position: relative;
+    z-index: 3;
+}
+.barraNavecgacion ul{
+    list-style: none;
+    
+
+}
+
+
+
+main .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .hero .img{
+    width: 100%;
+
+
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+    
+}
+main .section .article{
+    background-color: var(--gris);
+    padding: 1rem;
+
+}
+main .section .article h2{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--titulo);
+}
+main .section .article .divTexto p{
+    color: var(--letra);
+    padding: 0 1rem;
+}
+.spanNaranjo{
+    color: var(--naranjo);
+}
+
